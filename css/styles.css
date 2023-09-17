@@ -284,17 +284,16 @@ img {
   width: 100%;
   height: 100%;
   opacity: 1;
-  visibility: visible;
   background-color: var(--modal-overlay-color);
   transition: opacity var(--transition-fast);
-  visibility: var(--transition-fast);
+  visibility: visible;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%) translateY(-50%);
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -344,7 +343,12 @@ img {
   fill: var(--subtle-text-color);
 }
 
-/* Pop-up window */
+.modal-caption {
+  margin: 72px 24px 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
 .modal-caption {
   margin: 72px 24px 16px;
   text-align: center;
@@ -354,10 +358,132 @@ img {
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
+  color: var(--subtle-text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
 
-  color: rgba(64, 64, 64, 0.3);
-  font-size: 14px;
-  letter-spacing: -0.02em;
+.modal-form-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border-radius: 4px;
+  outline: transparent;
+  border: 1px solid var(--dark-color);
+  transition: border-color var(--transition-fast);
+}
+
+.modal-form-input:focus {
+  border-color: var(--primary-brand-color);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--dark-color);
+  transition: stroke var(--transition-fast);
+  pointer-events: none;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--primary-brand-color);
+}
+
+.modal-form {
+  margin: 24px;
+}
+
+.modal-form-comment {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+
+  border-radius: 4px;
+  outline: transparent;
+  border: 1px solid var(--dark-color);
+  resize: none;
+
+  transition: border-color var(--transition-fast);
+}
+
+.modal-form-comment:focus {
+  border-color: var(--primary-brand-color);
+}
+.modal-form-comment::placeholder {
+  color: #2e2f4266;
+}
+
+.modal-form-agreement {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.modal-form-agreement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+
+  color: var(--subtle-text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
+
+/* Normal state */
+.modal-form-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--dark-color);
+  transition: background-color var(--transition-fast),
+    border-color var(--transition-fast);
+  cursor: pointer;
+}
+
+/* Checked state */
+input[type="checkbox"]:checked + .modal-form-checkbox {
+  border-color: transparent;
+  background-color: var(--pressed-state-color);
+}
+
+.modal-form-checkbox-icon {
+  fill: var(--white-color);
+  opacity: 0;
+  transform: scale(0.2);
+  transition: fill var(--transition-fast), opacity var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+input[type="checkbox"]:checked
+  + .modal-form-checkbox
+  > .modal-form-checkbox-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-form-agreement-desc {
+  color: var(--subtle-text-color);
+  letter-spacing: 0.48px;
+  user-select: none;
+}
+.modal-form-agreement-link {
+  color: var(--primary-brand-color);
 }
 
 /**
@@ -718,4 +844,41 @@ img {
 
 .footer-socials-icon {
   fill: var(--light-color);
+}
+
+.footer-social {
+  margin-right: 80px;
+}
+
+.footer-subscribe {
+  margin-bottom: 16px;
+}
+
+/* Footer form */
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-form-input {
+  min-width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  color: var(--light-cl);
+  background-color: transparent;
+  outline: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+  transition: border-color var(--transition-fast);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-btn {
+  display: flex;
+  fill: white;
+  height: 40px;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
