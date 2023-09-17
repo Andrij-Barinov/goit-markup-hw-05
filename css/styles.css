@@ -14,7 +14,6 @@
   --accent-color: #e7e9fc;
   --light-color: #f4f4fd;
   --modal-overlay-color: #2e2f4266;
-
   --hero-footer-background-color: #2e2f42;
   --white-background-color: #ffffff;
   --modal-background-color: #fcfcfc;
@@ -287,8 +286,9 @@ img {
   opacity: 1;
   visibility: visible;
   background-color: var(--modal-overlay-color);
-  transition: opacity var(--transition-fast);visibility: var(--transition-fast);
-  }
+  transition: opacity var(--transition-fast);
+  visibility: var(--transition-fast);
+}
 
 .modal {
   position: absolute;
@@ -320,7 +320,7 @@ img {
   cursor: pointer;
   fill: var(--dark-color);
   transition: background-color var(--transition-fast);
-  border var(--transition-fast);
+  border: var(--transition-fast);
 }
 
 .backdrop.is-hidden {
