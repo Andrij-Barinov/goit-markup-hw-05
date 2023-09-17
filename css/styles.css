@@ -277,15 +277,17 @@ img {
   | Modal window
   |============================
 */
+
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--modal-overlay-color);
+  opacity: 1;
+  visibility: visible;
+  var(--modal-overlay-color);
   transition: opacity var(--transition-fast), visibility var(--transition-fast);
-}
 
 .modal {
   position: absolute;
@@ -338,7 +340,23 @@ img {
 
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
-  fill: var(--white-color);
+  fill: var(--subtle-text-color);
+}
+
+/* Pop-up window */
+.modal-caption {
+  margin: 72px 24px 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  letter-spacing: -0.02em;
 }
 
 /**
@@ -426,7 +444,6 @@ img {
 .team-card {
   background-color: var(--white-background-color);
   flex-basis: calc((100% - 24px * 3) / 4);
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
