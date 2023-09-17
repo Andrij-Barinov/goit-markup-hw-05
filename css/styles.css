@@ -286,8 +286,9 @@ img {
   height: 100%;
   opacity: 1;
   visibility: visible;
-  var(--modal-overlay-color);
-  transition: opacity var(--transition-fast), visibility var(--transition-fast);
+  background-color: var(--modal-overlay-color);
+  transition: opacity var(--transition-fast);visibility: var(--transition-fast);
+  }
 
 .modal {
   position: absolute;
@@ -318,8 +319,8 @@ img {
   background-color: var(--accent-color);
   cursor: pointer;
   fill: var(--dark-color);
-  transition: background-color var(--transition-fast),
-    border var(--transition-fast);
+  transition: background-color var(--transition-fast);
+  border var(--transition-fast);
 }
 
 .backdrop.is-hidden {
