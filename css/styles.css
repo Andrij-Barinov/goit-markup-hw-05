@@ -278,6 +278,7 @@ img {
 */
 
 .backdrop {
+  padding: 72px 24px 24px;
   position: fixed;
   top: 0;
   left: 0;
@@ -344,7 +345,6 @@ img {
 }
 
 .modal-caption {
-  margin: 72px 24px 16px;
   text-align: center;
   font-weight: 500;
 }
@@ -852,6 +852,8 @@ input[type="checkbox"]:checked
 
 .footer-subscribe {
   margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--white-color);
 }
 
 /* Footer form */
@@ -865,7 +867,10 @@ input[type="checkbox"]:checked
   min-width: 264px;
   height: 40px;
   padding: 8px 16px;
-  color: var(--light-cl);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
   background-color: transparent;
   outline: transparent;
   border-radius: 4px;
@@ -876,9 +881,17 @@ input[type="checkbox"]:checked
 
 .footer-form-btn {
   display: flex;
-  fill: white;
+  fill: var(--white-color);
   height: 40px;
-  gap: 16px;
   align-items: center;
   justify-content: center;
+  min-width: 165px;
+}
+
+.footer-form-label::placeholder {
+  color: var(--white-color);
+}
+
+.footer-airplane-icon {
+  margin-left: 16px;
 }
