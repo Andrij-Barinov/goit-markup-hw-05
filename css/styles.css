@@ -458,9 +458,9 @@ img {
 
 /* Checked state */
 .visually-hidden:checked ~ .modal-form-agreement .modal-form-checkbox {
-  border-color: transparent;
   background-color: var(--pressed-state-color);
   fill: var(--light-color);
+  border: none;
 }
 
 .modal-form-checkbox-icon {
