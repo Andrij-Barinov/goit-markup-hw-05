@@ -363,8 +363,11 @@ img {
 }
 
 .modal-form-field {
-  position: relative;
   margin-bottom: 8px;
+}
+
+.modal-input {
+  position: relative;
 }
 
 .modal-form-input {
