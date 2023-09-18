@@ -366,6 +366,10 @@ img {
   margin-bottom: 8px;
 }
 
+.form-comment {
+  margin-bottom: 8px;
+}
+
 .modal-input {
   position: relative;
 }
@@ -406,13 +410,16 @@ img {
   height: 120px;
   padding: 8px 16px;
   margin-bottom: 16px;
-
+  font-size: 12px;
   border-radius: 4px;
   outline: transparent;
-  border: 1px solid var(--dark-color);
   resize: none;
-
+  line-height: 1.17;
   transition: border-color var(--transition-fast);
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 }
 
 .modal-form-comment:focus {
@@ -433,12 +440,14 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 24px;
-
   color: var(--subtle-text-color);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
+}
+
+.modal-agreement {
+  margin-bottom: 24px;
 }
 
 /* Normal state */
