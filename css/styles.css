@@ -409,7 +409,6 @@ img {
   width: 100%;
   height: 120px;
   padding: 8px 16px;
-  margin-bottom: 16px;
   font-size: 12px;
   border-radius: 4px;
   outline: transparent;
@@ -432,18 +431,15 @@ img {
 .modal-form-agreement {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 40px;
-}
-
-.modal-form-agreement {
-  display: flex;
-  align-items: center;
   gap: 8px;
   color: var(--subtle-text-color);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
 }
 
 .modal-agreement {
