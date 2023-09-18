@@ -433,9 +433,8 @@ img {
   color: var(--subtle-text-color);
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.04em;
   margin-bottom: 40px;
-  margin-left: 8px;
 }
 
 .modal-agreement {
@@ -454,6 +453,7 @@ img {
   transition: background-color var(--transition-fast),
     border-color var(--transition-fast);
   cursor: pointer;
+  margin-right: 8px;
 }
 
 /* Checked state */
