@@ -465,8 +465,6 @@ img {
 
 .modal-form-checkbox-icon {
   fill: var(--white-color);
-  height: 16px;
-  width: 16px;
   opacity: 0;
   transition: fill var(--transition-fast), opacity var(--transition-fast),
     transform var(--transition-fast);
