@@ -376,8 +376,9 @@ img {
   padding-left: 38px;
   border-radius: 4px;
   outline: transparent;
-  border: 1px solid var(--dark-color);
   transition: border-color var(--transition-fast);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 }
 
 .modal-form-input:focus {
@@ -392,6 +393,7 @@ img {
   fill: var(--dark-color);
   transition: stroke var(--transition-fast);
   pointer-events: none;
+  transition: fill var(--transition-fast);
 }
 
 .modal-form-input:focus + .modal-form-icon {
