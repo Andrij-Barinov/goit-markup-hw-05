@@ -347,9 +347,7 @@ img {
 .modal-caption {
   text-align: center;
   font-weight: 500;
-}
-
-.modal-caption {
+  color: var(--dark-color);
   margin: 72px 24px 16px;
   text-align: center;
   font-weight: 500;
@@ -399,6 +397,10 @@ img {
 
 .modal-form {
   margin: 24px;
+}
+
+.modal-form-div {
+  margin-bottom: 8px;
 }
 
 .modal-form-comment {
@@ -886,6 +888,22 @@ input[type="checkbox"]:checked
   justify-content: center;
   min-width: 165px;
   height: 40px;
+  background-color: var(--primary-brand-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  font-family: var(--main-font);
+  margin: 0 auto;
+  border: none;
+  transition: background-color var(--transition-fast);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--pressed-state-color);
 }
 
 .footer-form-label::placeholder {
