@@ -882,10 +882,10 @@ input[type="checkbox"]:checked
 .footer-form-btn {
   display: flex;
   fill: var(--white-color);
-  height: 40px;
   align-items: center;
   justify-content: center;
   min-width: 165px;
+  height: 40px;
 }
 
 .footer-form-label::placeholder {
