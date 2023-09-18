@@ -348,7 +348,7 @@ img {
   text-align: center;
   font-weight: 500;
   color: var(--dark-color);
-  margin: 72px 24px 16px;
+  margin-bottom: 16px;
   text-align: center;
   font-weight: 500;
 }
