@@ -37,3 +37,5 @@
 - Комбінування псевдокласів
 
   [Посилання на макет 🍫](https://www.figma.com/file/SHNrA7r9RBXLqDUVYZjL1g/Simply-Chocolate?type=design&node-id=1%3A9&mode=design&t=foK1iyi0zXTCXHaq-1)
+
+[Посилання на репозиторій 🍫](https://github.com/YK911/mcs-2_html-css/tree/module-05)
